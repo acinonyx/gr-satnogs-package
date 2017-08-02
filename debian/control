@@ -1,0 +1,21 @@
+Source: gr-satnogs
+Section: science
+Priority: optional
+Maintainer: Vasilis Tsiligiannis <acinonyx@openwrt.gr>
+Build-Depends: debhelper (>= 9.0.0~), python-dev, cmake, gnuradio-dev (>=3.7.10),
+ libboost-dev, libboost-filesystem-dev, libboost-system-dev, swig, pkg-config,
+ libvorbis-dev, libpng-dev, libnova-dev, liblog4cpp5-dev, doxygen, git
+X-Python-Version: >= 2.7, << 2.8
+Standards-Version: 3.9.6
+Homepage: https://github.com/satnogs/gr-satnogs
+Vcs-Git: git://github.com/satnogs/gr-satnogs.git
+Vcs-Browser: https://github.com/satnogs/gr-satnogs
+
+Package: gr-satnogs
+Architecture: any
+Pre-Depends: multiarch-support
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Recommends: gnuradio
+Description: SatNOGS GNU Radio Out-Of-Tree Module
+ gr-satnogs is an out-of-tree GNU Radio module that provides all the necessary
+ tools for decoding signals from various scientific and academic sattelites.
