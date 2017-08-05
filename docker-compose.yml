@@ -4,4 +4,4 @@ services:
     build:
       context: .
     volumes:
-      - ./debian:/tmp/debian
+      - ./output:/tmp/dpkg
