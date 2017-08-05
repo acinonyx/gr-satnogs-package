@@ -6,12 +6,14 @@ script:
   - cd build
   - cmake ..
   - make
+before_deploy:
+  - cd "$TRAVIS_BUILD_DIR"/build
 deploy:
   provider: releases
   api-key:
     secure: ziKbwlZR9wnipXtkTJtLr3/O/MXQZPQgIa7JSgUZqfUc9E/NOZUWS0jFx1uDMNalpbqtZy7u3F4G5BB2UCF7szVGGPupIpqT07PR32JDxSnZEVyMkOII6xM5Q5m6ei4FrtiDokbGE5Y0J9qhcvd8ZanweoJVLuv2DjhrbQXyQQdpwhxlQgNSBdo7otxBIEkMHw5hPiavhKQ/DmblBxxxHb2hrnmHenlbgBa0udQ2uhIowGOfUzlFKO98R6JSvNYIaufpBLwCzbRzL2aCWdYCBUKQ/csQ2YY4YuI523ar8yTEffDhkSx1/4NC/BszbRopUP0pNbkCUrSZbE46swebDIZyNPSP5+XajgSRrXDQs9klXAubQCztsZVI2mU13T5buJR4pXA0NIuyTi1WjVDbR4xpx8tMTgA0N1fO3ibS7623a63zUCOv7Cglt2+4rxn3XrS7sGfSatSYCM2EqziTu8WaWOnCQG9rgKH7EaJQ0EZ5eSQHQp4AzO4Oaqu22nVctZkS51+FD+UX6kPl31EIHKrPozglLVh1GWdP/DKLh3aGcJKLEYVFtdBYIkUiWmOCLQR0X7OQQf9xp846Ttj5LZgkut0pEku6yEz+Yed2mtTwSLsOb/qZLpCeOIg5xhBr8NDFmJ+35fOe4G0mUlqayS/sDtUeOuzYQN6iYGylgKE=
   file_glob: true
-  file: build/output/gr-satnogs*.deb
+  file: output/gr-satnogs*.deb
   skip_cleanup: true
   on:
     tags: true
