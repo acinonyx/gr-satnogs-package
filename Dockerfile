@@ -32,7 +32,7 @@ RUN apt-get update \
 		gnuradio-dev
 
 # Copy packaging directories
-COPY /debian /tmp/
+COPY debian /tmp/debian/
 
 # Copy packaging script
-COPY /build.sh /usr/local/bin/
+COPY build.sh /usr/local/bin/
