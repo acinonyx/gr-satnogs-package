@@ -2,7 +2,6 @@ sudo: required
 services:
   - docker
 script:
-  - docker run --rm --privileged multiarch/qemu-user-static:register --reset
   - mkdir build
   - cd build
   - cmake ..
