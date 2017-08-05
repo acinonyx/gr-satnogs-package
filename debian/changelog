@@ -1,4 +1,4 @@
-gr-satnogs (1.0~git20170608.0.51baff9-1) unstable; urgency=medium
+gr-satnogs (1.0+git20170608.0.51baff9-1) unstable; urgency=medium
 
   * Initial release.
 
