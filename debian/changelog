@@ -1,3 +1,9 @@
+gr-satnogs (1.0+git20170805.0.6b0deac-1) UNRELEASED; urgency=medium
+
+  * Bump to version 1.0+git20170805.0.6b0deac
+
+ -- Vasilis Tsiligiannis <acinonyx@openwrt.gr>  Sat, 05 Aug 2017 20:57:04 +0300
+
 gr-satnogs (1.0+git20170608.0.51baff9-1) unstable; urgency=medium
 
   * Initial release.
