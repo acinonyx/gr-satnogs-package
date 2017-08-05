@@ -17,4 +17,4 @@ cp -R "$DEBIAN_DIR" gr-satnogs*/
 
 # Build package
 cd gr-satnogs*/
-dpkg-buildpackage -us -uc
+dpkg-buildpackage -us -uc -j$(nproc)
